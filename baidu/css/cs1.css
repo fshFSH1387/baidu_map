@@ -1,0 +1,59 @@
+*{
+    padding:0;
+    margin:0;
+}
+#box{
+    width:100%;
+    height:100%;
+    background-image: url("");
+
+}
+#box #sbox{
+    width: 340px;
+    height: 390px;
+    /*background-color: #0059A5;*/
+    background-image: url("");
+    margin: 80px auto;
+    border:2px solid;
+}
+#box #sbox #top{
+    width: 340px;
+    height: 50px;
+    background-color: #B7B7B7;
+    text-align: center;
+}
+#box #sbox #top a{
+    /*padding:30px auto;*/
+
+    text-decoration: none;
+    font:30px "黑体";
+    color: #000;
+}
+#box #sbox #myform #usename:hover {
+    background-color:#FF0000;
+}
+#box #sbox #myform #pwd:hover {
+    background-color:#FF0000;
+}
+#box #sbox #myform #ckb{
+    margin: 20px;
+}
+#box #sbox #myform #autoenty{
+    font-size: 20px;
+}
+#box #sbox #myform #entry{
+    margin-left: 30px;
+}
+#box #sbox #myform #register{
+    margin-left: 30px;
+}
+#box #sbox #bottom_a{
+    width: 220px;
+    height: 20px;
+    /*background-color:red;*/
+    margin-top: 45px;
+    margin-left: 90px;
+}
+#box #sbox #bottom_a{
+    font-size: 15px;
+}

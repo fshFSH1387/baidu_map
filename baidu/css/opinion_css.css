@@ -1,0 +1,110 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-image:url("../img/opinion-bg-all.jpg");
+}
+#box{
+    width:100%;
+    height: 100%;
+    /*background-color: #A5A5A5;*/
+    /*background-image:url("../img/opinion-bg-all.jpg");*/
+}
+#box #top{
+    width:100%;
+    height: 20px;
+    /*background-color:red;*/
+}
+#box #top  #top_nav{
+    width: 450px;
+    height: 20px;
+    /*background-color:blueviolet;*/
+    margin-left: 600px;
+
+}
+#box #top #top_nav ul{
+    display: inline-block;
+    float: right;
+    list-style: none;
+}
+#box #top #top_nav ul li{
+    display: inline-block;
+    float: left;
+    list-style: none;
+}
+#box #nav{
+    width:100%;
+    height: 55px;
+}
+#box #nav #nav_nav{
+    width: 450px;
+    height: 50px;
+    /*background-color:blueviolet;*/
+    margin: 1px auto;
+    margin-left: 300px;
+    padding-top: 20px;
+}
+#box #nav #nav_nav ul{
+    display: inline-block;
+    float: right;
+    list-style: none;
+}
+#box #nav #nav_nav ul li{
+    display: inline-block;
+    float: left;
+    list-style: none;
+}
+#box #main{
+    width: 810px;
+    height: 100%;
+    /*background-color: #01BEFF;*/
+    margin:0 auto;
+}
+#box #main #useropinion{
+    width: 810px;
+    height: 30px;
+    /*background-color: #343434;*/
+}
+#box #main #useropinion p{
+    color: #F7F8F8;
+    margin-left: 10px;
+    display: inline-block;
+}
+#box #main #useropinion p:hover{
+    color: red;
+}
+#box #main #useropinion img{
+    display: inline-block;
+    float: right;
+    margin-top: 3px;
+    margin-left:20px;
+}
+#box #main #useropinion img:hover{
+    border:3px red;
+}
+#box #main #choose{
+    width: 780px;
+    height: 100%;
+    /*background-color: bisque;*/
+    margin: 5px auto;
+}
+#box #main #choose p{
+    font-size: 30px;
+    color: whitesmoke;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+#box #main #choose input{
+    width: 20px;
+    font-size: 20px;
+    margin-left: 90px;
+}
+#box #main #choose button:hover{
+    background-color: #4646FF;
+    /*color: white;*/
+}
+a{
+    text-decoration: none;
+    color: #000;
+}

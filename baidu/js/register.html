@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度地图导航系统注册页面</title>
+    <link type="text/css" rel="stylesheet" href="./css/cs1.css"/>
+
+    <!--这个是跳转到导航页面的函数-->
+    <script>
+        function jump_map() {
+            window.location.href = "./navmap.html";
+        }
+    </script>
+
+    <!--得到注册表单中的账号和密码数据,直接跳转到导航页面,并且调用verifyUser函数,和submitTable函数-->
+    <!--注册按钮调用这个函数-->
+    <script type="text/javascript">
+        function doSubmit(){
+            var username1=document.getElementById("username1").value;
+            var pwd1=document.getElementById("pwd1").value;
+            javascrtpt:submitTable();   //获得账号密码表单函数
+            javascrtpt:jump_map();     //挑转到导航页面函数
+            javascrtpt:verifyUser(username1,pwd1);   //添加数据进入access数据库中的函数  最重要
+            return false;
+        }
+    </script>
+
+
+    <!--将注册表中输入的账号和密码做成一个table,-->
+    <script type="text/javascript">
+        function submitTable(){
+            var account = document.getElementById("username1").value;
+            var password1=document.getElementById("pwd1").value;
+//            var password2=document.getElementById("pwd2").value;
+            row = document.getElementById("table").insertRow();
+            if(row!=null){
+                cell=row.insertCell();
+                cell.innerHTML=account;
+                cell = row.insertCell();
+                cell.innerHTML=password1;
+//                cell = row.insertCell();
+//                cell.innerHTML=password2;
+            }
+            return false;
+        }
+    </script>
+</head>
+<body>
+<div id="box">
+    <div id="sbox">
+        <div id="top">
+            <a href="#"><h4>账号密码注册</h4></a>
+        </div>
+        <br/>
+        <form id="myform" action="pushdata.asp" method="post">
+            <label for="username1" style=" font-size: 30px; padding: 20px; ">账号:</label>
+            <input type="text" name="username1" id="username1"
+                   style="height: 26px; width: 180px; padding: 2px;background-color: #D7D7D7;"
+                   placeholder="请输入手机号\QQ\微信"/>
+            <br/>
+            <label for="pwd1" style=" font-size: 30px; padding: 20px; ">密码:</label>
+            <input type="password" name="pwd1" id="pwd1"
+                   style="height: 26px; width: 180px; padding: 2px;background-color: #D7D7D7;" placeholder="请输入密码"/>
+            <br/>
+            <label for="pwd2" style=" font-size: 30px; padding: 20px; ">密码:</label>
+            <input type="password" name="pwd2" id="pwd2"
+                   style="height: 26px; width: 180px; padding: 2px;background-color: #D7D7D7;" placeholder="请再次输入密码"/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <input type="buttom" id="register" value="注册"
+                   style="font-size: 25px;height: 40px; width: 280px;background-color: #4646FF;text-align: center;"
+                   onclick="javascrtpt:doSubmit()"/>
+                   <!--onclick="javascrtpt:jump_map()"/>-->
+            <table border="0" width="0" align="center" id="table" name="table">
+
+                <tr>
+                    <th style="font-size: 0px">账号</th><th style="font-size: 0px">密码</th><th style="font-size: 0px">密码</th>
+                </tr>
+
+            </table>
+
+        </form>
+        <div id="bottom_a">
+            <a href="./index.html">首页|</a>
+            <a href="#">注册须知|</a>
+            <a href="./opinion.html">意见反馈</a>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
